@@ -1,0 +1,6 @@
+<ng-container *ngIf="cart$ | async as cart">
+    <h1>{{ cart.code }}</h1>
+    <ul *ngFor="let entry of cart.entries">
+        <li>{{ entry.quantity }} x {{ entry.product.name }} - {{ entry.totalPrice.formattedValue }}</li>
+    </ul>
+</ng-container>
