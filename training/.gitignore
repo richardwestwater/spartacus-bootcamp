@@ -4,18 +4,22 @@
 /dist
 /tmp
 /out-tsc
-# Only exists if Bazel was run
-/bazel-out
+/documentation
+
+# test output
+test-results.xml
+
+# docs archives
+docs.tar.gz
+docs.zip
 
 # dependencies
-/node_modules
-
-# profiling files
-chrome-profiler-events*.json
-speed-measure-plugin*.json
+node_modules/
+package-lock.json
 
 # IDEs and editors
 /.idea
+*.iml
 .project
 .classpath
 .c9/
@@ -31,15 +35,17 @@ speed-measure-plugin*.json
 !.vscode/extensions.json
 .history/*
 
+
 # misc
 /.sass-cache
 /connect.lock
-/coverage
 /libpeerconnection.log
+/typings
+
+# Logs
 npm-debug.log
 yarn-error.log
 testem.log
-/typings
 
 # System Files
 .DS_Store

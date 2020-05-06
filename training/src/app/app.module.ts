@@ -7,6 +7,7 @@ import { B2cStorefrontModule } from '@spartacus/storefront';
 import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
 import { CustomBannerModule } from './custom-banner/custom-banner.module';
 import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-details.module';
+import { ConfigExerciseModule } from './config-exercise/config-exercise.module';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-detai
     BrowserTransferStateModule,
     OutletExerciseModule,
     CustomBannerModule,
-    CustomCartDetailsModule
+    CustomCartDetailsModule,
+    ConfigExerciseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
