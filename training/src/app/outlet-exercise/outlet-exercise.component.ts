@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CurrentProductService } from '@spartacus/storefront';
 
 @Component({
   selector: 'app-outlet-exercise',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OutletExerciseComponent implements OnInit {
 
-  constructor() { }
+  product$ = this.currentProductService.getProduct();
+
+  constructor(protected currentProductService: CurrentProductService) { }
 
   ngOnInit(): void {
   }
