@@ -7,8 +7,22 @@
 
 <ng-template cxOutletRef="Section1" cxOutletPos="before">
     <h1>BIG SALE!!!!</h1>
-    <div>
-        <a href="/Open-Catalogue/Cameras/Digital-Cameras/c/575">Sale Cameras!</a>
-        <a href="/product/300938/Photosmart%20E317%20Digital%20Camera">Great reductions on this camera!</a>
-    </div>
+    <ul>
+        <li><a href="/Open-Catalogue/Cameras/Digital-Cameras/c/575">Sale Cameras!</a></li>
+        <li><a href="/product/300938/Photosmart%20E317%20Digital%20Camera">Great reductions on this camera!</a></li>
+    </ul>
+</ng-template>
+
+<ng-template cxOutletRef="Footer">
+    <ul>
+        <li>Some brand info</li>
+        <li>Contact Us</li>
+        <li>About us</li>
+    </ul>
+</ng-template>
+
+<ng-template cxOutletRef="ProductDetailsPageTemplate" cxOutletPos="before">
+    <ng-container *ngIf="product$ | async as product">
+        <h1 *ngIf="product.manufacturer === 'Kodak'">{{ product.manufacturer }}</h1>
+    </ng-container>
 </ng-template>
