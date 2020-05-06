@@ -20,9 +20,3 @@
         <li>About us</li>
     </ul>
 </ng-template>
-
-<ng-template cxOutletRef="ProductDetailsPageTemplate" cxOutletPos="before">
-    <ng-container *ngIf="product$ | async as product">
-        <h1 *ngIf="product.manufacturer === 'Kodak'">{{ product.manufacturer }}</h1>
-    </ng-container>
-</ng-template>
