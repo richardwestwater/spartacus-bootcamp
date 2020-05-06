@@ -1,0 +1,8 @@
+
+<ng-container *ngIf="component.data$ | async as data">
+      <cx-media [container]="data.media"></cx-media>
+      <cx-generic-link
+      [url]="data.urlLink">
+      <p>{{ data.name }}</p>
+    </cx-generic-link>
+</ng-container>

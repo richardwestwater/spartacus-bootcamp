@@ -3,8 +3,9 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
-import { B2cStorefrontModule, OutletRefModule } from '@spartacus/storefront';
+import { B2cStorefrontModule } from '@spartacus/storefront';
 import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
+import { CustomBannerModule } from './custom-banner/custom-banner.module';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
       }
     }),
     BrowserTransferStateModule,
-    OutletExerciseModule
+    OutletExerciseModule,
+    CustomBannerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
