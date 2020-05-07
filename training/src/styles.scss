@@ -3,9 +3,12 @@
 @import '~@spartacus/styles/index';
 
 :root {
-    --cx-color-primary: #5E9F76;
+    --cx-color-primary: #9792E3;
     --cx-color-secondary: #EDFFEC;
-    --cx-color-text: #9792E3;
+    --cx-color-text: #5E9F76;
     --cx-color-background: #5A5766;
     --cx-color-dark: #48435C;
+
+    --cx-border-radius: 0em;
+    --cx-buttons-border-radius: 0rem;
   }
