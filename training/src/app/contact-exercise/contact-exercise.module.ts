@@ -10,7 +10,8 @@ import { UrlModule } from '@spartacus/core';
   declarations: [ContactExerciseComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    UrlModule
   ],
   exports: [ContactExerciseComponent],
 })

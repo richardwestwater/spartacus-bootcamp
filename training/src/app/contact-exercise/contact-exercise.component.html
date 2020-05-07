@@ -7,3 +7,12 @@
     <li><a routerLink="/contact">contact page</a></li>
     <li><a routerLink="/faq">faq page</a></li>
 </ul>
+
+<h3>Cart</h3>
+<p>
+  <a [routerLink]="{ cxRoute: 'cart' } | cxUrl">Cart page</a>
+</p>
+
+<h3>Product</h3>
+
+<a [routerLink]="{ cxRoute: 'product', params: { productCode: 553637 } } | cxUrl">Special Product</a>
