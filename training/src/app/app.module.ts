@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
-import { B2cStorefrontModule } from '@spartacus/storefront';
+import { B2cStorefrontModule, PAGE_LAYOUT_HANDLER } from '@spartacus/storefront';
 import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
 import { CustomBannerModule } from './custom-banner/custom-banner.module';
 import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-details.module';
@@ -35,14 +35,15 @@ import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
       }
     }),
     BrowserTransferStateModule,
-    OutletExerciseModule,
-    CustomBannerModule,
-    CustomCartDetailsModule,
-    ConfigExerciseModule,
-    RoutingExerciseModule,
+    // OutletExerciseModule,
+    // CustomBannerModule,
+    // CustomCartDetailsModule,
+    // ConfigExerciseModule,
+    // RoutingExerciseModule,
     LayoutExerciseModule
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
