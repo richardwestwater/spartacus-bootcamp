@@ -16,5 +16,18 @@ export const bootcampLayoutConfig: LayoutConfig = {
           'PlaceholderContentSlot',
         ],
       },
+      SearchResultsListPageTemplate: {
+        lg: {
+          slots: [
+            'Section2',
+            'ProductLeftRefinements',
+            'SearchResultsListSlot',
+          ],
+        },
+        slots: [
+          'ProductLeftRefinements',
+          'SearchResultsListSlot',
+        ],
+      },
     },
 };
