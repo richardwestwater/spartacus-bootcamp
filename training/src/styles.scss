@@ -13,15 +13,29 @@
     --cx-buttons-border-radius: 0rem;
   }
 
-  $skipComponentStyles: (cx-add-to-cart);
+$skipComponentStyles: (cx-add-to-cart);
 
-  %custom-add-to-cart {
+%custom-add-to-cart {
     .btn {
         text-transform: uppercase;
     }
-  }
+}
 
-  cx-add-to-cart {
+cx-add-to-cart {
     @extend %custom-add-to-cart !optional;
-  }
-  
+}
+
+$skipComponentStyles: (cx-banner);
+
+%custom-banner {
+    img {
+        opacity:1.0;
+      }
+      img:hover {
+        opacity:0.4;
+      }
+}
+
+cx-banner {
+    @extend %custom-banner !optional;
+}
