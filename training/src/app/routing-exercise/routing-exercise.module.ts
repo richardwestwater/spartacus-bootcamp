@@ -17,25 +17,6 @@ import { ProductPrettyNameNormalizer } from './product-name-normalizer';
     RouterModule.forChild([
       { path: 'contact', canActivate: [CmsPageGuard], component: ContactExerciseComponent, }
     ]),
-    ConfigModule.withConfig({
-      routing: {
-        routes: {
-          product: {
-            paths: [
-              'oldschool/cameras/:productCode/:prettyName',
-              'product/:productCode/:prettyName',
-              'product/:productCode/:name'
-            ]},
-          },
-        },
-      } as RoutingConfig),
-  ],
-  providers: [
-    {
-      provide: PRODUCT_NORMALIZER,
-      useExisting: ProductPrettyNameNormalizer,
-      multi: true,
-    },
   ],
 })
 export class RoutingExerciseModule { }
