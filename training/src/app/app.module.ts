@@ -10,6 +10,7 @@ import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-detai
 import { ConfigExerciseModule } from './config-exercise/config-exercise.module';
 import { RoutingModule } from '@spartacus/core';
 import { RoutingExerciseModule } from './routing-exercise/routing-exercise.module';
+import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { RoutingExerciseModule } from './routing-exercise/routing-exercise.modul
     CustomBannerModule,
     CustomCartDetailsModule,
     ConfigExerciseModule,
-    RoutingExerciseModule
+    RoutingExerciseModule,
+    LayoutExerciseModule
   ],
   providers: [],
   bootstrap: [AppComponent]
