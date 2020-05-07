@@ -12,3 +12,16 @@
     --cx-border-radius: 0em;
     --cx-buttons-border-radius: 0rem;
   }
+
+  $skipComponentStyles: (cx-add-to-cart);
+
+  %custom-add-to-cart {
+    .btn {
+        text-transform: uppercase;
+    }
+  }
+
+  cx-add-to-cart {
+    @extend %custom-add-to-cart !optional;
+  }
+  
