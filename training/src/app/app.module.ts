@@ -11,6 +11,7 @@ import { ConfigExerciseModule } from './config-exercise/config-exercise.module';
 import { RoutingModule } from '@spartacus/core';
 import { RoutingExerciseModule } from './routing-exercise/routing-exercise.module';
 import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
+import { MiniCartEntriesModule } from './mini-cart-entries/mini-cart-entries.module';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
     // CustomCartDetailsModule,
     // ConfigExerciseModule,
     // RoutingExerciseModule,
-    LayoutExerciseModule
+    // LayoutExerciseModule,
+    MiniCartEntriesModule
   ],
   providers: [],
 
