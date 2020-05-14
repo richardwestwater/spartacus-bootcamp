@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CustomCartDetailsComponent } from './custom-cart-details.component';
-import { ConfigModule, CmsConfig } from '@spartacus/core';
+import { ConfigModule, CmsConfig, I18nModule } from '@spartacus/core';
 
 
 
@@ -16,6 +16,7 @@ import { ConfigModule, CmsConfig } from '@spartacus/core';
         }
       }
     } as CmsConfig),
+    I18nModule
   ],
   exports: [CustomCartDetailsComponent],
   entryComponents: [CustomCartDetailsComponent]

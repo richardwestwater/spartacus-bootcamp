@@ -4,7 +4,12 @@ export const translationOverwrites = {
             addToCart: {
                 addToCart: 'Buy!',
             }
-        }
+        },
+        cart: {
+            cartDetails: {
+                cartTitle: 'Your cart',
+            }
+        },
     },
     de: {
         common: {
@@ -16,6 +21,11 @@ export const translationOverwrites = {
             addToCart: {
                 addToCart: 'Buy It!',
             }
-        }
+        },
+        cart: {
+            cartDetails: {
+                cartTitle: 'Ihr Warenkorb',
+            }
+        },
     },
 };

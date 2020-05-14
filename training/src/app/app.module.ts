@@ -39,7 +39,7 @@ import { translationOverwrites } from './i18n-exercise/i18n-exercise.config';
     BrowserTransferStateModule,
     // OutletExerciseModule,
     // CustomBannerModule,
-    // CustomCartDetailsModule,
+    CustomCartDetailsModule,
     // ConfigExerciseModule,
     // RoutingExerciseModule,
     // LayoutExerciseModule,
