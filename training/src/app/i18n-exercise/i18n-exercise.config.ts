@@ -6,4 +6,16 @@ export const translationOverwrites = {
             }
         }
     },
+    de: {
+        common: {
+            searchBox: {
+                placeholder: 'Suche hier....',
+            },
+        },
+        product: {
+            addToCart: {
+                addToCart: 'Buy It!',
+            }
+        }
+    },
 };
