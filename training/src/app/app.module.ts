@@ -8,10 +8,11 @@ import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
 import { CustomBannerModule } from './custom-banner/custom-banner.module';
 import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-details.module';
 import { ConfigExerciseModule } from './config-exercise/config-exercise.module';
-import { RoutingModule } from '@spartacus/core';
+import { RoutingModule, ConfigModule, I18nConfig } from '@spartacus/core';
 import { RoutingExerciseModule } from './routing-exercise/routing-exercise.module';
 import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
 import { MiniCartEntriesModule } from './mini-cart-entries/mini-cart-entries.module';
+import { translationOverwrites } from './i18n-exercise/i18n-exercise.config';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,12 @@ import { MiniCartEntriesModule } from './mini-cart-entries/mini-cart-entries.mod
     // ConfigExerciseModule,
     // RoutingExerciseModule,
     // LayoutExerciseModule,
-    MiniCartEntriesModule
+    // MiniCartEntriesModule,
+    ConfigModule.withConfig({
+      i18n: {
+        resources: translationOverwrites,
+      }
+    } as I18nConfig),
   ],
   providers: [],
 
