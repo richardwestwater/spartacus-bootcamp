@@ -13,6 +13,7 @@ import { RoutingExerciseModule } from './routing-exercise/routing-exercise.modul
 import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
 import { MiniCartEntriesModule } from './mini-cart-entries/mini-cart-entries.module';
 import { translationOverwrites } from './i18n-exercise/i18n-exercise.config';
+import { DataBindingExerciseModule } from './data-binding-exercise/data-binding-exercise.module';
 
 @NgModule({
   declarations: [
@@ -39,16 +40,17 @@ import { translationOverwrites } from './i18n-exercise/i18n-exercise.config';
     BrowserTransferStateModule,
     // OutletExerciseModule,
     // CustomBannerModule,
-    CustomCartDetailsModule,
+    // CustomCartDetailsModule,
     // ConfigExerciseModule,
     // RoutingExerciseModule,
     // LayoutExerciseModule,
     // MiniCartEntriesModule,
-    ConfigModule.withConfig({
-      i18n: {
-        resources: translationOverwrites,
-      }
-    } as I18nConfig),
+    // ConfigModule.withConfig({
+    //   i18n: {
+    //     resources: translationOverwrites,
+    //   }
+    // } as I18nConfig),
+    DataBindingExerciseModule
   ],
   providers: [],
 
