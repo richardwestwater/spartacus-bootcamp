@@ -3,17 +3,18 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { translations, translationChunksConfig } from '@spartacus/assets';
-import { B2cStorefrontModule, PAGE_LAYOUT_HANDLER } from '@spartacus/storefront';
+import { B2cStorefrontModule, PAGE_LAYOUT_HANDLER, SeoMetaService } from '@spartacus/storefront';
 import { OutletExerciseModule } from './outlet-exercise/outlet-exercise.module';
 import { CustomBannerModule } from './custom-banner/custom-banner.module';
 import { CustomCartDetailsModule } from './custom-cart-details/custom-cart-details.module';
 import { ConfigExerciseModule } from './config-exercise/config-exercise.module';
-import { RoutingModule, ConfigModule, I18nConfig } from '@spartacus/core';
+import { RoutingModule, ConfigModule, I18nConfig, PageMetaResolver, ContentPageMetaResolver } from '@spartacus/core';
 import { RoutingExerciseModule } from './routing-exercise/routing-exercise.module';
 import { LayoutExerciseModule } from './layout-exercise/layout-exercise.module';
 import { MiniCartEntriesModule } from './mini-cart-entries/mini-cart-entries.module';
 import { translationOverwrites } from './i18n-exercise/i18n-exercise.config';
 import { DataBindingExerciseModule } from './data-binding-exercise/data-binding-exercise.module';
+import { SeoExerciseModule } from './seo-exercise/seo-exercise.module';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { DataBindingExerciseModule } from './data-binding-exercise/data-binding-
     //     resources: translationOverwrites,
     //   }
     // } as I18nConfig),
-    DataBindingExerciseModule
+    // DataBindingExerciseModule,
+    SeoExerciseModule
   ],
   providers: [],
 
