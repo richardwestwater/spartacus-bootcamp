@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ActiveCartService, StateWithMultiCart, AuthService, MultiCartService, Cart } from '@spartacus/core';
+import { ActiveCartService, StateWithMultiCart,  MultiCartService, Cart, UserIdService } from '@spartacus/core';
 import { Store } from '@ngrx/store';
 import { map } from 'rxjs/operators';
 import { Observable } from 'rxjs';
@@ -10,11 +10,11 @@ import { Observable } from 'rxjs';
 export class MiniCartEntriesService extends ActiveCartService {
 
   constructor(
-    protected store: Store<StateWithMultiCart>,
-    protected authService: AuthService,
-    protected multiCartService: MultiCartService
+    protected store: Store<StateWithMultiCart>
+    ,
+    protected multiCartService: MultiCartService, userIdService: UserIdService
   ) {
-    super(store, authService, multiCartService);
+    super(store , multiCartService, userIdService);
   }
 
   getNumEntries(): Observable<number> {
